@@ -37,6 +37,16 @@ class QueryBuilderHandler
     protected $tablePrefix = null;
 
     /**
+     * @var string
+     */
+    protected $adapter;
+
+    /**
+     * @var array
+     */
+    protected $adapterConfig;
+
+    /**
      * @var \WpFluent\QueryBuilder\Adapters\BaseAdapter
      */
     protected $adapterInstance;
